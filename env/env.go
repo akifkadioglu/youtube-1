@@ -9,7 +9,11 @@ import (
 )
 
 const (
-	PASSWORD string = "DATABASE_PASSWORD"
+	DB_HOST     string = "DB_HOST"
+	DB_PORT     string = "DB_PORT"
+	DB_DATABASE string = "DB_DATABASE"
+	DB_USERNAME string = "DB_USERNAME"
+	DB_PASSWORD string = "DB_PASSWORD"
 )
 
 const (
