@@ -30,7 +30,7 @@ func InitEnv(t int) {
 	case PROD:
 		err = godotenv.Load(filepath.Join("/etc/secrets", ".env"))
 	case TEST:
-
+		err = godotenv.Load(filepath.Join("./../env", ".env"))
 	}
 	if err != nil {
 		log.Fatal("env file doesnt exist", err)

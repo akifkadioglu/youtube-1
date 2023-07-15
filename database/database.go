@@ -14,6 +14,11 @@ func Connection() {
 	database.conn()
 }
 
+func TestConnection() {
+	var database SQLite
+	database.conn()
+}
+
 func DBManager() *ent.Client {
 	return client
 }
